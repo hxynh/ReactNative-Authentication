@@ -9,7 +9,7 @@ async function authenticate(mode, email, password) {
         password: password,
         returnSecureToken: true
     })
-    console.log(response.data)
+    
     const token = response.data.idToken;
     return token;
 }
